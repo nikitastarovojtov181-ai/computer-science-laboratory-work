@@ -8,8 +8,8 @@ def is_divisor(a, b):
 
 if __name__ == '__main__':
 
-    num_a = int(input("Введите число a: "))
-    num_b = int(input("Введите число b: "))
+    num_a = int(input())
+    num_b = int(input())
 
     ans = is_divisor(num_a, num_b)
-    print(f"Результат проверки: {ans}")
+    print(ans)
