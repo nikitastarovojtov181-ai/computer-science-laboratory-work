@@ -14,9 +14,9 @@ if __name__ == '__main__':
 
     if choice == "1":
         ans = bytes_to_kilobytes(val)
-        print(f"Result: {ans} KB")
+        print(f"Result: {ans}")
     elif choice == "2":
         ans = kilobytes_to_bytes(val)
-        print(f"Result: {ans} Bytes")
+        print(f"Result: {int(ans)}")
     else:
         print("Incorrect choice!")
