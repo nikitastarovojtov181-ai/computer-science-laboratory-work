@@ -3,6 +3,8 @@ def echo_number(number):
     return res
 
 if __name__ == '__main__':
-    num = int(input("Enter a number: "))
+    user_input = input()
+    num = float(user_input) if '.' in user_input else int(user_input)
+    
     ans = echo_number(num)
     print(ans)
