@@ -10,9 +10,9 @@ def guests_by_seat(seats):
     return result
 
 if __name__ == '__main__':
-    user_input = input("Введите номера мест через пробел: ")
-    test_seats = [int(x) for x in user_input.split()]
-
-    if test_seats:
-        ans = guests_by_seat(test_seats)
-        print(f"Номера гостей по местам: {ans}")
+    user_input = input().strip()
+    
+    if user_input:
+        user_seats = [int(x) for n in user_input.split()]
+        ans = guests_by_seat(user_seats)
+        print(*(ans))
