@@ -7,7 +7,7 @@ def multiplication_table(n):
     return table
 
 if __name__ == '__main__':
-    num = int(input("Введите число для таблицы умножения: "))
+    num = int(input())
     ans = multiplication_table(num)
 
     for string in ans:
