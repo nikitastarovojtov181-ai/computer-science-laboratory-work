@@ -6,11 +6,14 @@ def index_of_min(values):
     return res
 
 if __name__ == '__main__':
-    user_input = input("Введите элементы списка через пробел:")
-    if user_input.strip() == "":
+    user_input = input().strip()
+    if user_input == "":
         my_list = []
     else:
-        my_list = [float(x) for x in user_input.split()]
+        my_list = []
+        for x in user_input.split():
+            val = float(x) if '.' in x else int(x)
+            my_list.append(val)
 
     ans = index_of_min(my_list)
-    print(f"Индекс мнимального элемента: {ans}")
+    print(ans)
