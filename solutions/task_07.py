@@ -4,11 +4,11 @@ def compare(m, n):
     elif m < n:
         return "Number m < n"
     else:
-        return "The number are equal"
+        return "The numbers are equal"
 
 if __name__ == '__main__':
-    val1 = float(input("Enter m: "))
-    val2 = float(input("Enter n: "))
+    val1 = float(input())
+    val2 = float(input())
 
     ans = compare(val1, val2)
     print(ans)
