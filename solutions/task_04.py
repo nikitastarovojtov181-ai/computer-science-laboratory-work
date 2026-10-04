@@ -5,10 +5,11 @@ def swap(a, b):
     return a, b
 
 if __name__ == '__main__':
-    x = float(input("Введите первое число: "))
-    y = float(input("Введите второе число: "))
+    user_input_x = input()
+    x = float(user_input_x) if '.' in user_input_x else int(user_input_x)
 
-    print(f"До обмена: x = {x}, y = {y}")
+    user_input_y = input()
+    y = float(user_input_y) if '.' in user_input_y else int(user_input_y)
 
     x, y = swap(x, y)
-    print(f"После обмена: x = {x}, y = {y}")
+    print(x, y)
