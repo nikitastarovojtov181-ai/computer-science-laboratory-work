@@ -10,11 +10,14 @@ def sum_range(start, end):
     return total
 
 if __name__ == '__main__':
-    print("--- Проверка функции cirle_diameter ---")
-    r = float(input("Введите радиус: "))
-    print(f"Диаметр: {circle_diameter(r)}")
-
-    print("\n--- Проверка функции sum_range ---")
-    s = int(input("Введите начало диапазона (start): "))
-    e = int(input("Введите конец диапазона (end): "))
-    print(f"Сумма ряда: {sum_range(s, e)}")
+    user_input_r = input()
+    r = float(user_input_r) if '.' in user_inpit_r else int(user_input_r)
+    
+    s = int(input())
+    e = int(input())
+    
+    ans_diameter = circle_diameter(r)
+    ans_sum = sum_range(s, e)
+    
+    print(ans_diameter)
+    print(ans_sum)
