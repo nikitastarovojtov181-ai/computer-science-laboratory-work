@@ -10,8 +10,8 @@ def days_in_month(month, year):
     return 31
 
 if __name__ == '__main__':
-    m = int(input("Введите номер месяца (1-12): "))
-    y = int(input("Введите четырехзначный год: "))
+    m = int(input())
+    y = int(input())
 
     ans = days_in_month(m, y)
-    print(f"Колличество дней: {ans}")
+    print(ans)
